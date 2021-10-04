@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/require-file-overview */
 module.exports = {
-  extends: ['./packages/eslint-config/src/index.js'],
+  extends: ['@arinthros'],
   ignorePatterns: [
     '**/node_modules/**',
     '**/publish',

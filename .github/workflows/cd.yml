@@ -1,0 +1,28 @@
+name: NPM continuous deployment
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.release.target_commitish }}
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+        registry-url: https://registry.npmjs.org
+    - run: yarn install --frozen-lockfile
+    - run: git config --global user.name "GitHub workflow bot"
+    - run: git config --global user.email "github-workflow@arinthros.com"
+    - run: yarn version --new-version ${{ github.event.release.tag_name }} # TODO: change flag with yarn 2
+    - run: yarn build
+    - run: npm publish build --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - run: git push
+      env:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

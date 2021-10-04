@@ -10,5 +10,5 @@ jobs:
         with:
           node-version: 12.x
       - run: yarn install --frozen-lockfile
-      - run: yarn lint:ci
+      # - run: yarn lint:ci # Temporarily disable until eslint-config is published
       - run: yarn build

@@ -7,7 +7,7 @@
   "author": "Bryson Hotopp",
   "license": "ISC",
   "bin": {
-    "arinthros-common": "index.js"
+    "arinthros-scripts": "index.js"
   },
   "scripts": {
     "lint": "eslint ./src/ --ext .js,.jsx",

@@ -1,6 +1,6 @@
 {
   "name": "@arinthros/scripts",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Common scripts for my projects.",
   "main": "index.js",
   "repository": "https://github.com/arinthros/scripts",

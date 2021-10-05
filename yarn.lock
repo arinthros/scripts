@@ -3,9 +3,9 @@
 
 
 "@arinthros/eslint-config@>=0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@arinthros/eslint-config/-/eslint-config-0.2.9.tgz#8e687acd779df631eaaa1ed406021f8e4b6056bb"
-  integrity sha512-Xg7dN5E+KI/NDtsV4vaSrIFEB45l29eqRumsM9Oj7Kblfc1QjoxSm4SHhuWXaAopPPLf+X7ewjYWnjyVSfbaHg==
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@arinthros/eslint-config/-/eslint-config-0.2.10.tgz#82c9dadd58d5e8f204ff6cbe40ffadfc35a6ff16"
+  integrity sha512-n4fPXWP7TzIiv9I9XV5wzhOdadQcM/7nkT4q4wdaCtcU04NQe7UVFJhPoUAXUaH6eGqQ5Pd9rv8G6e+KtYPAIQ==
   dependencies:
     eslint-config-prettier "8.1.0"
     eslint-import-resolver-node "0.3.4"
